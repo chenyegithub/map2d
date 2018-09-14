@@ -1,0 +1,26 @@
+body {
+	overflow: hidden;
+}
+
+.gonganmap {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
+
+#gonganmapPopup{
+	background-image: url("../images/alarmpopup.png");
+	width:200px;
+	height:250px;
+	position: absolute;
+	background-size:100% 100%;
+}
+
+.custom-mouse-position{
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    z-index: 20;
+}
+

@@ -1,0 +1,104 @@
+
+
+.circle {
+	width: 200px;
+	height: 200px;
+}
+
+.circle1, .circle2, .circle3, .center {
+	position: absolute;
+	margin: -5px 0 0 -36px;
+	width: 20px;
+	height: 20px;
+	border-radius: 30px;
+	background-color: #ff4200;
+	opacity: 0.01;
+}
+
+.center {
+	display: none;
+	position: absolute;
+	margin: -35px 0 0 -35px;
+	width: 20px;
+	height: 20px;
+	border-radius: 35px;
+	background: #ff4200; 
+	text-align: center;
+	line-height: 70px;
+	color: #EAEAEA;
+	font-size: 16px;
+	font-family: '';
+}
+.centerimg {
+	position: absolute;
+    margin: -45px 0 0 -30px;
+}
+
+.circle1 {
+	-webkit-animation: circle 0.6s linear 8;
+	animation: circle 0.6s linear 2226;
+	animation-iteration-count: 8;
+	-webkit-animation-iteration-count: 8;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.circle2 {
+	-webkit-animation: circle 1s linear 0.8s 3;
+	animation: circle 1s linear 0.8s 3;
+	animation-duration: 5s;
+	-webkit-animation-duration: 5s;
+	animation-iteration-count: 3;
+	-webkit-animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.circle3 {
+	-webkit-animation: circle 1s linear 1.6s 3;
+	/* Safari and Chrome */
+	animation: circle 1s linear 1.6s 3;
+	animation-duration: 5s;
+	-webkit-animation-duration: 5s;
+	animation-iteration-count: 3;
+	-webkit-animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes circle {
+	/* Safari and Chrome */ from { opacity:1;
+	-webkit-transform: scale(0);
+	}
+
+to {
+	opacity: 0;
+	-webkit-transform: scale(3);
+}
+}
+
+@-webkit-keyframes bounce-down {
+ 25% {-webkit-transform: translateY(-10px);}
+ 50%, 100% {-webkit-transform: translateY(0);}
+ 75% {-webkit-transform: translateY(10px);}
+}
+
+@keyframes bounce-down {
+ 25% {transform: translateY(-10px);}
+ 50%, 100% {transform: translateY(0);}
+ 75% {transform: translateY(10px);}
+}
+
+.animate-bounce-down{
+   -webkit-animation: bounce-down 1.5s linear infinite;
+   animation: bounce-down 1.5s linear infinite;
+   animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+	animation-iteration-count: 3;
+	-webkit-animation-iteration-count: 3;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+   margin: -49px 0 0 -30px;
+}
+
+
